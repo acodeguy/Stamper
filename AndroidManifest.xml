@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.reptilesoft.stamper"
+      android:versionName="1.4.2" android:versionCode="12">
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Stamper"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<receiver android:name=".SmsReceiver" android:priority="100"> 
+ 	<intent-filter> 
+		<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+    </intent-filter> 
+ </receiver>
+ 
+ <activity android:name=".Preferences"
+    	android:label="Preferences">
+    </activity>
+    
+ <service android:name=".StamperService">
+    	<intent-filter>
+			<action android:name="com.reptilesoft.stamper.StamperService" />
+		</intent-filter>
+    </service>
+    	<!-- The application's publisher ID assigned by AdMob -->
+		<meta-data android:value="" android:name="ADMOB_PUBLISHER_ID" />
+		<activity android:name="com.admob.android.ads.AdMobActivity" 
+		android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		android:configChanges="orientation|keyboard|keyboardHidden" />
+		<receiver android:name="com.admob.android.ads.analytics.InstallReceiver" 
+		android:exported="true">
+		<intent-filter> <action android:name="com.android.vending.INSTALL_REFERRER" />
+		</intent-filter> </receiver>	
+    </application>
+<!-- <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+<!-- <uses-permission android:name="android.permission.RECEIVE_MMS" />  -->
+<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+<uses-sdk android:targetSdkVersion="4" android:minSdkVersion="4"></uses-sdk>
+</manifest> 

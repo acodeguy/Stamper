@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+  	<CheckBoxPreference
+  		android:key="fix_on"
+  		android:title="Fix timestamps"
+  		android:summary="Enable/disable app"
+  		android:defaultValue="true">
+  	</CheckBoxPreference>
+	
+	<ListPreference
+		android:key="pref_delay"
+		android:defaultValue="3000"
+		android:entries="@array/delay_entries"
+		android:entryValues="@array/delay_values"
+		android:title="Fix delay"
+		android:summary="Experiment with values to fix problems with updting timestamp, especially with 3rd party apps; Handcent, etc."
+		android:dependency="fix_on">
+		
+	</ListPreference>
+	
+	<!-- for when the message was sent by sender -->
+	<CheckBoxPreference
+		android:key="body_timestamp_tx"
+		android:title="Timestamp tx"
+		android:summary="Add sent time to message body"
+		android:defaultValue="true"
+		android:dependency="fix_on">
+	</CheckBoxPreference>
+	
+	<!-- for when the message was received on the handset -->
+	<CheckBoxPreference
+		android:key="body_timestamp_rx"
+		android:title="Timestamp rx"
+		android:summary="Add received time to message body"
+		android:defaultValue="true"
+		android:dependency="fix_on">
+	</CheckBoxPreference>
+	
+	<!-- only fix if x minutes out of time -->
+	<!-- <ListPreference
+	    android:key="pref_outtime"
+	    android:defaultValue="6000"
+	    android:summary="Only fix timestamp if out by x amount"
+	    android:dependency="fix_on"/> -->
+	
+	<!-- <ListPreference
+		android:key="pref_offset"
+		android:defaultValue="0"
+		android:entries="@array/offset_entries"
+		android:entryValues="@array/offset_values"
+		android:title="Timezone offset"
+		android:summary="Use this to compensate for timezone problems, i.e. SMS stamp being 4 hours in the past."
+		android:dependency="fix_on"/> -->
+		
+</PreferenceScreen>

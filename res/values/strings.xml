@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Timestamp Fix</string>
+    
+    <!-- used for displaying delay strings in prefs -->
+    <string-array name="delay_entries">
+    	<item>2 seconds</item>
+    	<item>3 seconds</item>
+    	<item>4 seconds</item>
+    	<item>5 seconds</item>
+    	<item>10 seconds</item>
+    </string-array>
+    
+    <!-- used for values for sharedpref., in ms -->
+    <string-array name="delay_values">
+    	<item>2000</item>
+    	<item>3000</item>
+    	<item>4000</item>
+    	<item>5000</item>
+    	<item>10000</item>
+    </string-array>
+    
+    <string-array name="offset_entries">
+    	<item>12</item>
+    	<item>11</item>
+    	<item>10</item>
+    	<item>9</item>
+    	<item>8</item>
+    	<item>7</item>
+    	<item>6</item>
+    	<item>5</item>
+    	<item>4</item>
+    	<item>3</item>
+    	<item>2</item>
+    	<item>1</item>
+    	<item>0</item>
+    	<item>-1</item>
+    	<item>-2</item>
+    	<item>-3</item>
+    	<item>-4</item>
+    	<item>-5</item>
+    	<item>-6</item>
+    	<item>-7</item>
+    	<item>-8</item>
+    	<item>-9</item>
+    	<item>-10</item>
+    	<item>-11</item>
+    	<item>-12</item>
+    </string-array>
+    
+    <string-array name="offset_values">
+    	<item>12</item>
+    	<item>11</item>
+    	<item>10</item>
+    	<item>9</item>
+    	<item>8</item>
+    	<item>7</item>
+    	<item>6</item>
+    	<item>5</item>
+    	<item>4</item>
+    	<item>3</item>
+    	<item>2</item>
+    	<item>1</item>
+    	<item>0</item>
+    	<item>-1</item>
+    	<item>-2</item>
+    	<item>-3</item>
+    	<item>-4</item>
+    	<item>-5</item>
+    	<item>-6</item>
+    	<item>-7</item>
+    	<item>-8</item>
+    	<item>-9</item>
+    	<item>-10</item>
+    	<item>-11</item>
+    	<item>-12</item>
+    </string-array>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/com.reptilesoft.stamper"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dip">
+
+<TextView
+    android:id="@+id/txt_app_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SMS Timestamp Fix"
+    android:textColor="#FF0000"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+    	android:id="@+id/txt_app_ver"
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+    />
+    
+    <TextView
+    	android:id="@+id/txt_about"
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="Your incoming text messages will be saved with the correct timestamp, the time it was sent to you, NOT the time that it was recieved by your handset. This app runs only when a text is recieved, then exits; you need not do anything more once installed!"
+    />
+    
+    <!-- <com.admob.android.ads.AdView
+    	android:id="@+id/ad" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	myapp:backgroundColor="#000000" 
+    	myapp:primaryTextColor="#FFFFFF" 
+    	myapp:secondaryTextColor="#CCCCCC" />  -->
+
+    <TextView
+        android:id="@+id/txt_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Experiment with the fix delay in preferences if you use a third party messaging app like Handcent." />
+	
+	<Button
+	    android:id="@+id/btn_pref"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="settings" />
+   
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="exit" />
+    
+    <TextView
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="Click the Reptile Soft logo below to see what other apps we have developed"
+    />
+    
+    <ImageButton
+    	android:id="@+id/btn_market_link"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/rslogo"
+    	android:layout_gravity="center_horizontal">
+   	</ImageButton>
+
+</LinearLayout>
